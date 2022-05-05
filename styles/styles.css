@@ -2,14 +2,20 @@
     --hover-color: #2196F3;
     --firsttext-color: #212121;
     --secondtext-color: #757575;
+    --black:#000;
+    --white:#fff;
+    --boreder-header: #ececec;
+    --background-footer: #2f303a;
+    --background-team: #F5F4FA;
+    --border-jobs: #EEEEEE;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: black;
-    margin: 0px;
-    background-color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    background-color: var(--white);
 }
 
 ul {
@@ -20,7 +26,7 @@ ul {
 
 header {
     text-align: center;
-    border-bottom: 2px solid #ECECEC;
+    border-bottom: 2px solid var(--boreder-header);
 }
 
 header a {
@@ -32,14 +38,14 @@ header a:hover, header a:focus {
 }
 
 .page-logo {
-    font-family: 'Raleway';
-    color: black;
+    font-family: "Raleway";
     font-size: 26px;
     line-height: 1;
+    color: var(--black);
 }
 
 .page-logo:hover, .page-logo:focus {
-    color: black;
+    color: var(--black);
 }
 
 .page-logo span {
@@ -55,13 +61,14 @@ header nav a {
 }
 
 header a:hover, header a:focus,
-.active {
+.active, .current {
     color: var(--hover-color);
 }
 
 header .contact li a {
     font-size: 14px;
     line-height: 1;
+    font-weight: 500;
     color: var(--secondtext-color);
 }
 
@@ -73,11 +80,11 @@ header li a:hover, header li a:focus {
 
 .main {
     text-align: center;
-    background: #2F303A;
+    background: var(--background-footer);
 }
 
 .main_information h1 {
-    color: white;
+    color: var(--white);
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -90,7 +97,7 @@ header li a:hover, header li a:focus {
     font-weight: 700;
     line-height: 1.7;
     letter-spacing: 0.06em;
-    color: white;
+    color: var(--white);
     height: 50px;
     width: 200px;
     background-color: var(--hover-color);
@@ -132,7 +139,7 @@ header li a:hover, header li a:focus {
 
 .team {
     text-align: center;
-    background: #F5F4FA;
+    background: var(--background-team);
 }
 
 .team_list h2 {
@@ -144,7 +151,7 @@ header li a:hover, header li a:focus {
 }
 
 .team_list li {
-    background: white;
+    background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -173,7 +180,7 @@ header li a:hover, header li a:focus {
 
 .type_selection_filter_group button {
     text-decoration: none;
-    background: #F5F4FA;
+    background: var(--background-team);
     border: 4px solid transparent;
     font-size: 16px;
     font-weight: 500;
@@ -188,7 +195,7 @@ header li a:hover, header li a:focus {
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: #fff;
+    color: var(--white);
 }
 
 .list_container {
@@ -198,8 +205,16 @@ header li a:hover, header li a:focus {
 }
 
 .jobs_container {
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--border-jobs);
     box-sizing: border-box;
+}
+
+.jobs_container a {
+    text-decoration: none;
+}
+
+.jobs_container a:hover {
+    text-decoration: none;
 }
 
 .jobs_container img {
@@ -222,7 +237,7 @@ header li a:hover, header li a:focus {
 
 footer {
     text-align: center;
-    background: #2F303A;
+    background: var(--background-footer);
     box-sizing: border-box;
 }
 
@@ -231,18 +246,19 @@ footer a {
 }
 
 footer .page-logo {
-    color: white;
+    color: var(--white);
 }
 
 footer .page-logo:hover, footer .page-logo:focus {
-    color: white;
+    color: var(--white);
 }
 
 footer address {
-    color: #fff;
+    color: var(--white);
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.02em;
+    font-style: normal;
 }
 
 footer li a {
